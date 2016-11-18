@@ -20,9 +20,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    #url(r'^f/(?P<keyword>\w{0,50})/$', filter, name = 'maps'),
     url(r'^f/$', filter),
-    #url(r'^read/', file_read, name = 'display'),
     url(r'^$', init_index, name = 'index'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
